@@ -1,0 +1,89 @@
+.auth-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eaeaea;
+}
+
+.auth-card {
+    width: 900px;
+    height: 550px;
+    display: flex;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* LEFT */
+.auth-left {
+    flex: 1;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.auth-left h2 {
+    margin-bottom: 10px;
+}
+
+.auth-left p {
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.auth-left input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+.auth-options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.auth-left button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 30px;
+    border: none;
+    background: #2d4fa3;
+    color: white;
+    cursor: pointer;
+}
+
+.auth-left button:hover {
+    background: #1c3b82;
+}
+
+.bottom-text {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.toggle-link {
+    color: #2d4fa3;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* RIGHT */
+.auth-right {
+    flex: 1;
+    background: linear-gradient(135deg, #0f1c3f, #1c2d5a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-right img {
+    width: 140px;
+}
