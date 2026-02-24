@@ -24,29 +24,48 @@ A clean and minimal authentication application built using:
 
 ##  Project Structure
 
-backend/
+```
+solace-auth-app/
 │
-├── config/
-│   └── db.js
-├── controllers/
-│   └── authController.js
-├── routes/
-│   └── authRoutes.js
-├── server.js
-└── .env
-
-frontend/
+├── backend/
+│   ├── config/
+│   │   └── db.js
+│   │
+│   ├── controllers/
+│   │   └── authController.js
+│   │
+│   ├── routes/
+│   │   └── authRoutes.js
+│   │
+│   ├── middleware/
+│   │   └── authMiddleware.js
+│   │
+│   ├── server.js
+│   ├── package.json
+│   └── .env (not committed)
 │
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── services/
-│   └── App.jsx
-└── vite.config.js
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   └── AuthForm.jsx
+│   │   │
+│   │   ├── pages/
+│   │   │   ├── AuthPage.jsx
+│   │   │   └── Dashboard.jsx
+│   │   │
+│   │   ├── services/
+│   │   │   └── api.js
+│   │   │
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   │
+│   ├── package.json
+│   └── vite.config.js
+│
+└── README.md
+```
 
----
-
-## ⚙️ Backend Setup
+##  Backend Setup
 
 1. Install dependencies
 
@@ -66,7 +85,7 @@ node server.js
 
 ---
 
-## 💻 Frontend Setup
+##  Frontend Setup
 
 1. Install dependencies
 
@@ -78,7 +97,7 @@ npm run dev
 
 ---
 
-## 🔐 API Endpoints
+##  API Endpoints
 
 POST /api/auth/register  
 POST /api/auth/login  
@@ -86,7 +105,7 @@ POST /api/auth/login
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 - React
 - Node.js
